@@ -1,0 +1,37 @@
+{
+  "name": "opencode-authprofile",
+  "version": "0.1.0",
+  "description": "Save and switch named auth profiles from a native OpenCode TUI menu.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./tui": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "store.js",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "tui",
+    "auth",
+    "profiles"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "check": "node --check index.js && node --check store.js",
+    "test": "node --test",
+    "prepack": "npm run check && npm test",
+    "publish:check": "npm publish --dry-run --registry=https://registry.npmjs.org/"
+  }
+}
