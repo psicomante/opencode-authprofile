@@ -25,8 +25,6 @@ The native menu runs JavaScript directly, without a model request. The plugin ha
 
 ## Install from npm
 
-The package is prepared for its first npm release. This installation method becomes available after `opencode-authprofile@0.1.0` is published; until then, use a local checkout below.
-
 Add the package to `~/.config/opencode/tui.json` (or `tui.jsonc`):
 
 ```json
