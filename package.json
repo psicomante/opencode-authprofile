@@ -33,5 +33,13 @@
     "test": "node --test",
     "prepack": "npm run check && npm test",
     "publish:check": "npm publish --dry-run --registry=https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psicomante/opencode-authprofile.git"
+  },
+  "homepage": "https://github.com/psicomante/opencode-authprofile#readme",
+  "bugs": {
+    "url": "https://github.com/psicomante/opencode-authprofile/issues"
   }
 }
